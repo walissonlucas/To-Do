@@ -1,0 +1,18 @@
+.header {
+  background: var(--gray-700);
+  height: 225px;
+  max-width: 100%;
+  padding-top: 6.2rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.LogoName {
+    color: var(--blue);
+    font-size: 4.6rem;
+  }
+.nameList {
+    color: var(--purple);
+    font-size: 5rem;
+  }
