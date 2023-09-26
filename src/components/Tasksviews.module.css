@@ -1,0 +1,82 @@
+.task_view {
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.taskbox {
+   background: var(--gray-400);
+   border-radius: 8px;
+   padding: 2rem;
+   width: 800px;
+   height: 7rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.taskbox > button { 
+   background: transparent;
+   border: 0;
+   color: var(--gray-200);
+   cursor: pointer;
+   line-height: 0;
+}
+
+.taskbox input {
+   cursor: pointer;
+   appearance: none;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   outline: none;
+   border: 2px solid var(--blue);
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.taskbox input:before {
+   content: '';
+   position: absolute;
+   height: 20px;
+   width: 20px;
+   background: var(--purple);
+   border-radius: 50%;
+   opacity: 0;
+   
+}
+.taskbox input:checked::before {
+   opacity: 1;
+   background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+   background-position: center;
+}
+.taskbox input:checked + p {
+   text-decoration: line-through;
+   opacity: .5;
+}
+
+p {
+   color: var(--gray-200);
+}
+
+.Task_finished {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   margin-top: -250px;
+   margin-bottom: -14rem;
+   left: 1520px;
+}
+.Task_finished p {
+   font-weight: bold;
+   color: var(--purple);
+   padding-right: 5px;
+}
+.Task_finished span {
+   background: var(--gray-400);
+   padding: 0 10px 0 10px;
+   border-radius: 9px;
+}

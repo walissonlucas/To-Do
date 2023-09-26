@@ -1,0 +1,97 @@
+.taskForm {
+   justify-content: center;
+   text-align: center;
+   display: flex;
+   margin-top: -32px;
+}
+
+.comment {
+   background: var(--gray-400);
+   outline: 0;
+   color: var(--gray-100);
+   width: 700px;
+   height: 70px;
+   text-align: center;
+   line-height: 70px;
+   border-radius: 8px;
+   border: 0;
+   resize: none;
+}
+
+.button {
+   display: flex;
+   padding: 20px;
+   background: var(--blue);
+   color: var(--gray-100);
+   height: 6.7rem;
+   width: 10rem;
+   margin-left: 3px;
+   margin-top: 1px;
+   border-radius: 8px;
+   border: 0;
+   cursor: pointer;
+   align-items: center;
+}
+
+.button:disabled {
+   display: flex;
+   padding: 20px;
+   height: 6.8rem;
+   width: 10rem;
+   margin-left: 3px;
+   margin-top: 1px;
+   border-radius: 8px;
+   border: 0;
+   align-items: center;
+   background: var(--gray-300);
+   color: var(--gray-100);
+   cursor: not-allowed;
+} 
+.button p {
+   margin-right: 5px;
+   font-size: 15px;
+   font-weight: bold;
+   color: var(--gray-100);
+}
+.button:enabled:hover {
+   transform: scale(0.98);
+   opacity: .8;
+}
+.taskList {
+   margin-top: 16rem;
+}
+.counter {
+   display: flex;
+   align-items: center;
+   margin-left: 880px;
+   margin-top: 16rem;
+   margin-bottom: -15rem;
+}
+.counter p {
+   font-weight: bold;
+   color: var(--blue);
+   padding-right: 5px;
+}
+.counter span {
+   background: var(--gray-400);
+   padding: 0 10px 0 10px;
+   border-radius: 9px;
+}
+
+.Task_finished {
+   display: flex;
+   align-items: center;
+   margin-left: 1525px;
+   margin-top: 12.5rem;
+   margin-bottom: -14rem;
+}
+.Task_finished p {
+   font-weight: bold;
+   color: var(--purple);
+   padding-right: 5px;
+}
+.Task_finished span {
+   background: var(--gray-400);
+   padding: 0 10px 0 10px;
+   border-radius: 9px;
+}
